@@ -86,6 +86,17 @@ export type FeaturesSectionProps = {
   buttonHref: string
 }
 
+export type GalleryImage = {
+  src: string
+  alt: string
+}
+
+export type GallerySectionProps = {
+  eyebrow: string
+  title: string
+  images: GalleryImage[]
+}
+
 export type CtaSectionProps = {
   logoSrc: string
   logoAlt: string

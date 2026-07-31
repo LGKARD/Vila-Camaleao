@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import DifferentialsSection from './components/DifferentialsSection'
 import AboutSection from './components/AboutSection'
 import FeaturesSection from './components/FeaturesSection'
+import GallerySection from './components/GallerySection'
 import CtaSection from './components/CtaSection'
 import Footer from './components/Footer'
 
@@ -43,6 +44,15 @@ const featuresItems = [
   { iconClassName: 'fa-solid fa-book-open', label: 'Inglês no dia a dia', accentClassName: 'feature-item-icon--purple' },
   { iconClassName: 'fa-solid fa-shield-halved', label: 'Ambiente seguro e acolhedor', accentClassName: 'feature-item-icon--orange' },
   { iconClassName: 'fa-solid fa-apple-whole', label: 'Alimentação balanceada', accentClassName: 'feature-item-icon--green' },
+]
+
+const galleryImages = [
+  { src: '/galeria/recreio.jpeg', alt: 'Crianças brincando no recreio da Escola Vila Camaleão' },
+  { src: '/galeria/ciencias.jpeg', alt: 'Crianças participando de aula de ciências' },
+  { src: '/galeria/leitura.jpeg', alt: 'Crianças em momento de leitura na biblioteca da escola' },
+  { src: '/galeria/arte.jpeg', alt: 'Crianças criando projetos de arte' },
+  { src: '/galeria/musica.jpeg', alt: 'Crianças participando de aula de música' },
+  { src: '/galeria/lanche.jpeg', alt: 'Crianças fazendo um lanche saudável na escola' },
 ]
 
 const footerColumns = [
@@ -140,6 +150,12 @@ function App() {
           items={featuresItems}
           buttonLabel="Ver todos os diferenciais"
           buttonHref="#diferenciais"
+        />
+
+        <GallerySection
+          eyebrow="Nosso dia a dia"
+          title="Galeria"
+          images={galleryImages}
         />
 
         <CtaSection

@@ -3,11 +3,10 @@ import type { HeaderProps, NavItem } from '../types'
 
 const navItems: NavItem[] = [
   { href: '#inicio', label: 'Início' },
-  { href: '#escola', label: 'A Escola' },
   { href: '#educacao', label: 'Educação' },
+  { href: '#escola', label: 'A Escola' },
   { href: '#diferenciais', label: 'Diferenciais' },
   { href: '#galeria', label: 'Galeria' },
-  { href: '#blog', label: 'Blog' },
   { href: '#contato', label: 'Contato' },
 ]
 
